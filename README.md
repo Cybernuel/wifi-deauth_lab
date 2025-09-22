@@ -132,11 +132,10 @@ sudo aireplay-ng --deauth 0 -a 90:9A:4A:B8:F3:FB wlan0mon
 - Replace the BSSID (`90:9A:4A:B8:F3:FB`) with the target network's BSSID.
 - Ensure `wlan0mon` is your network interface in monitor mode.
 - The `--deauth 0` flag sends continuous deauthentication packets until stopped.
-```
+
 
 ---
 ## Analyse captures with Wireshark
-```
 Open the `.cap` file in Wireshark:
 
 ```bash
@@ -174,7 +173,7 @@ aircrack-ng capture1-01.cap -w /usr/share/wordlists/rockyou.txt
 - Ensure you have the `rockyou.txt` wordlist in text format (unzip if necessary on Kali Linux).
 - Replace `hack1-01.cap` with the name of your captured file.
 - The wordlist path (`/usr/share/wordlists/rockyou.txt`) assumes the default location on Kali Linux; adjust if using a different wordlist or path.
-```
+
 ---
 
 ## Stop monitor mode & restore network
